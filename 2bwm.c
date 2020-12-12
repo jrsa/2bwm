@@ -519,6 +519,7 @@ changeworkspace_helper(const uint32_t ws)
 		setfocus(findclient(&pointer->child));
 		free(pointer);
 	}
+    focusnext_helper(0);
 }
 
 void
