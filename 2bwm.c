@@ -2928,6 +2928,7 @@ destroynotify(xcb_generic_event_t *ev)
 		forgetwin(cl->id);
 
 	updateclientlist();
+    focusnext_helper(0);
 }
 
 void
